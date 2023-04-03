@@ -4,18 +4,39 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Etch-a-Sketch</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
 		<h1>Etch-a-Sketch</h1>
 	</header>
 	<main>
-		<div class="tools"></div>
-		<div class="sketch"></div>
-		<div class="options"></div>
+		<div class="tools-sketch">
+			<div class="tools">
+				<input type="color" name="color-picker">
+				<div class="rainbow-toggle">
+					<input type="checkbox" name="rainbow">
+					<p>Rainbow</p>
+				</div>
+				<div class="shade-toggle">
+					<input type="checkbox" name="shade">
+					<p>Shading</p>
+				</div>
+			</div>
+			<div class="sketch">sketch</div>
+			<div class="align-div"> </div>
+		</div>
+		<div class="options">
+			<div class=size-range-container>
+				<p>Small</p>
+				<input class="size-range" type="range" name="size">
+				<p>Large</p>
+			</div>
+			<button>Reset</button>
+		</div>
 	</main>
 	<footer>
-		<p>Made by Kina</p>
+		<p>Made by...</p>
 	</footer>
 </body>
 </html>
