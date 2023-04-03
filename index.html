@@ -14,14 +14,14 @@
 	<main>
 		<div class="tools-sketch">
 			<div class="tools">
-				<input type="color" name="color-picker">
+				<input class="color-picker" type="color" name="color-picker">
 				<div class="rainbow-toggle">
-					<input type="checkbox" name="rainbow">
-					<p>Rainbow</p>
+					<input id="rainbow" type="checkbox" name="rainbow">
+					<label for="rainbow">Rainbow</label>
 				</div>
 				<div class="shade-toggle">
-					<input type="checkbox" name="shade">
-					<p>Shading</p>
+					<input id="shade" type="checkbox" name="shade">
+					<label for="shade">Shading</label>
 				</div>
 			</div>
 			<div class="sketch"></div>
@@ -30,10 +30,11 @@
 		<div class="options">
 			<div class=size-range-container>
 				<p>Small</p>
-				<input class="size-range" type="range" name="size">
+				<input class="size-range" type="range" name="size" min="4" max="64">
 				<p>Large</p>
 			</div>
-			<button>Reset</button>
+			<p class=size-range-read>16x16</p>
+			<button class="reset">Reset</button>
 		</div>
 	</main>
 	<footer>
